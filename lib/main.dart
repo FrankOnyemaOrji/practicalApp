@@ -343,7 +343,7 @@ class _YogaAppState extends State<YogaApp> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                    padding: EdgeInsets.symmetric(vertical: 13, horizontal: 20),
                     decoration: BoxDecoration(
                       color: Colors.grey.shade900,
                       borderRadius: BorderRadius.circular(
@@ -352,62 +352,55 @@ class _YogaAppState extends State<YogaApp> {
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         GFAvatar(
                           backgroundImage: AssetImage('images/onyema.webp'),
                           shape: GFAvatarShape.standard,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 0, horizontal: 15),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Weight Lifting',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 5),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'Weight Lifting',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 10, horizontal: 0),
-                                child: Text('5 Excercises . 1 hr 15 min',
-                                    style: TextStyle(color: Colors.white)),
-                              ),
-                            ],
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 10, horizontal: 0),
+                                  child: Text('5 Excercises . 1 hr 15 min',
+                                      style: TextStyle(color: Colors.white)),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 5),
-                              child: Container(
-                                alignment: Alignment.centerRight,
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    width: 0.5,
-                                  ),
-                                  borderRadius: BorderRadius.circular(5),
-                                  color: Colors.redAccent,
-                                ),
-                                padding: const EdgeInsets.all(5),
-                                child: Icon(
-                                  Icons.arrow_forward_ios,
-                                  size: 10.0,
-                                  color: Colors.white,
-                                ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Container(
+                            width: 40,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                width: 0.5,
                               ),
+                              borderRadius: BorderRadius.circular(5),
+                              color: Colors.redAccent,
                             ),
-                          ],
+                            padding: const EdgeInsets.all(5),
+                            child: Icon(
+                              Icons.arrow_forward_ios,
+                              size: 10.0,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ],
                     ),
