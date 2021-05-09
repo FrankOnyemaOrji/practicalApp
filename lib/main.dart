@@ -353,7 +353,6 @@ class _YogaAppState extends State<YogaApp> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
                         GFAvatar(
                           backgroundImage: AssetImage('images/onyema.webp'),
                           shape: GFAvatarShape.standard,
